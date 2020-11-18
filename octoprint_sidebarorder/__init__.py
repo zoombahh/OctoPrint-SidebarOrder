@@ -56,6 +56,8 @@ class sidebarorder(octoprint.plugin.AssetPlugin,
 		)
 
 __plugin_name__ = "Sidebar Order"
+__plugin_version__ = "0.3.1"
+__plugin_pythoncompat__ = ">=2.7,<4"
 
 def __plugin_load__():
 	global __plugin_implementation__
