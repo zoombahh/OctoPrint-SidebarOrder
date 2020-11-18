@@ -9,8 +9,7 @@ class sidebarorder(octoprint.plugin.AssetPlugin,
 	
 	##-- AssetPlugin mixin
 	def get_assets(self):
-		return dict(js=["js/sidebarorder.js"],
-					css=["css/sidebarorder.css"])
+		return dict(js=["js/sidebarorder.js"])
 		
 	##-- Settings mixin
 	def get_settings_defaults(self):
@@ -56,6 +55,8 @@ class sidebarorder(octoprint.plugin.AssetPlugin,
 		)
 
 __plugin_name__ = "Sidebar Order"
+__plugin_version__ = "0.3.1"
+__plugin_pythoncompat__ = ">=2.7,<4"
 
 def __plugin_load__():
 	global __plugin_implementation__
